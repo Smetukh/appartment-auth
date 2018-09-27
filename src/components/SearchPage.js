@@ -38,7 +38,7 @@ export default class SearchPage extends Component<Props> {
     constructor(props) {
         super(props);
         this.state = {
-        searchString: 'London',
+        searchString: 'LondoN',
         isLoading: false,
         message: '',
     };
@@ -106,7 +106,7 @@ export default class SearchPage extends Component<Props> {
                         title='Go'
                     />
                 </View>
-                <Image source={require('./Resources/house.png')} style={styles.image}/>
+                <Image source={require('../../Resources/house.png')} style={styles.image}/>
                 {spinner}
                 <Text style={styles.description}>{this.state.message}</Text>
 
